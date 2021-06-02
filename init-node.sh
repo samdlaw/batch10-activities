@@ -5,8 +5,7 @@
 sudo apt -y update
 sudo apt -y upgrade
 #
-# Install the required tools:
-## Java
+# Dependency - Install Java
 sudo apt install -y default-jre
 #
 # Remove unecessary apps
