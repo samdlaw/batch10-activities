@@ -9,9 +9,13 @@ sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sou
 sudo apt -y update
 sudo apt -y upgrade
 #
+# Install dependency:
+## Java
+sudo apt install -y default-jre
+#
 # Install the required tools:
-## Java, Jenkins, Docker, Ansible
-sudo apt install -y default-jre jenkins docker.io ansible
+## Jenkins, Docker, Ansible
+sudo apt install -y jenkins docker.io ansible
 #
 # Add docker user & restart Jenkins to take effect
 sudo usermod -a -G docker jenkins
