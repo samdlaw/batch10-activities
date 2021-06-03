@@ -24,5 +24,9 @@ sudo usermod -a -G docker jenkins
 sudo systemctl stop jenkins
 sudo systemctl restart jenkins
 #
+# Install Sonarqube
+sudo docker pull sonarqube
+sudo docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
+#
 # Remove unecessary apps
 sudo apt -y autoremove
